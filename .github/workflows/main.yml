@@ -6,7 +6,6 @@ on:
 
 jobs:
   vscode:
-    build-docker:
     uses: instruqt/lab-docker-images/.github/workflows/docker.yml@main
     with:
       context: vscode
