@@ -61,4 +61,4 @@ jobs:
           context: vscode
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ steps.meta.outpu
+          tags: ${{ steps.meta.outputs.tags }}
