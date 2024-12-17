@@ -1,0 +1,13 @@
+name: Build and Release
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  vscode:
+    build-docker:
+    uses: instruqt/lab-agent/.github/workflows/docker.yml@main
+    with:
+      context: vscode
+    secrets: inherit
